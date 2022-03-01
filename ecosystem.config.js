@@ -18,10 +18,12 @@ module.exports = {
             env_production: {
                 APP_ENV: 'PRODUCTION',
                 NODE_ENV: 'production',
+                SWAGGER_ALLOWED: true,
             },
             env_development: {
                 APP_ENV: 'DEV',
                 NODE_ENV: 'development',
+                SWAGGER_ALLOWED: true
             },
         },
     ],
