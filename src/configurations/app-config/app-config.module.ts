@@ -11,10 +11,10 @@ import Config from './app-config';
       load: [Config],
       validationSchema: Joi.object({
         APP_NAME: Joi.string().default('MyApp'),
-        APP_PORT: Joi.number().default(3333).valid(3333, 3131),
+        APP_PORT: Joi.number().default(3333).valid(3333, 3131, 3000),
         NODE_ENV: Joi.string()
           .default('development')
-          .valid('development', 'test', 'production'),
+          .valid('development', 'test', 'production', 'local'),
         SWAGGER_ALLOWED: Joi.boolean().required(),
       }),
     }),

@@ -10,7 +10,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   // App Config
-  const appConfig: AppConfigService = app.get('AppConfigService');
+  const appConfig: AppConfigService = app.get(AppConfigService);
 
   if (appConfig.swaggerAllowed) {
     // Swagger
